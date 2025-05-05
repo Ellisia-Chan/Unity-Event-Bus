@@ -19,7 +19,7 @@ namespace Core.EventSystem {
         }
 
         // Unsubscribe from an event
-        public static void UnSubscribe<T>(Action<T> callback) {
+        public static void Unsubscribe<T>(Action<T> callback) {
             var type = typeof(T);
 
             if (eventTable.TryGetValue(type, out var delegateList)) {
