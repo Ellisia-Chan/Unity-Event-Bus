@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Core.EventSystem {
+namespace EventSystem {
     public static class EventBus {
         // Dictionary storing ordered lists of delegates for each event type
         private static readonly Dictionary<Type, List<Delegate>> eventTable = new();
